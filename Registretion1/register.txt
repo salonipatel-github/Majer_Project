@@ -1,0 +1,80 @@
+
+
+
+
+
+
+
+<?php
+session_start();
+
+$con = mysqli_connect('localhost', 'root', '', 'login_page'); // Add an empty string for the password, and specify the database
+
+if (!$con) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password'])) {
+    $name = mysqli_real_escape_string($con, $_POST['name']); // Sanitize user input
+    $email = mysqli_real_escape_string($con, $_POST['email']); // Sanitize user input
+    $pass = mysqli_real_escape_string($con, $_POST['password']); // Sanitize user input
+
+    $q = "SELECT * FROM sign_in WHERE Name = '$name' && Email = '$email' && Password = '$pass'";
+    $result = mysqli_query($con, $q);
+
+    if (mysqli_num_rows($result) > 0) {
+        echo "Duplicate data";
+    } else {
+        $qy = "INSERT INTO sign_in (Name, Email, Password) VALUES ('$name', '$email', '$pass')";
+        if (mysqli_query($con, $qy)) {
+            echo "Registration successful";
+        } else {
+            echo "Error: " . mysqli_error($con);
+        }
+    }
+} else {
+    echo "All fields are required";
+}
+
+mysqli_close($con);
+?>
+
+
+
+
+
+
+
+<?php 
+session_start();
+
+$con= mysqli_connect('localhost','root');
+if($con){
+    echo"connection succsessful";
+}
+else{
+    echo "No connection";
+}
+
+mysqli_select_db($con,'login_page');
+
+$name = ($_GET['name']); 
+// $email = ($_GET['email']); 
+$pass =  ($_GET['password']); 
+
+
+
+$q = "select * from  users where Username ='$name'  && 	Password='$pass' ";
+$result = mysqli_query($con,$q);
+$num = mysqli_num_rows($result);
+if($num==1){
+    // $_SESSION['username'] = $name;
+    header('location:Home.php');
+
+}
+else{
+    header('location:index.html');
+   
+}
+?>
+<!-- Username	Email	Password -->
