@@ -122,89 +122,81 @@ session_start();
         </div>
         <div class="cont">
             <label for="value"> Collage Name </label>
-            <input type="text" class="sel" placeholder=" Collage Name" name="collage_name" id="state"
-                class="form-control">
-           
+            <input type="text" class="sel" placeholder=" Collage Name" name="collage_name" id="state" class="form-control">
+
             <label for="value"> University Name</label>
-            <input type="text" class="sel" placeholder=" University Name" name="Univercity_name" id="state"
-                class="form-control">
+            <input type="text" class="sel" placeholder=" University Name" name="Univercity_name" id="state" class="form-control">
         </div>
     </form>
 
-    
+
     <?php
-    $connection = mysqli_connect('localhost','root' ,'','login_page');
-    if(isset($_POST['chack'])){
+    $connection = mysqli_connect('localhost', 'root', '', 'login_page');
+    if (isset($_POST['chack'])) {
         $Title = $_POST['Search'];
         $Degree = $_POST['degree'];
         $categories = $_POST['Categories'];
         $State = $_POST['state'];
         $making = $_POST['Making'];
         $Collage_name = $_POST['collage_name'];
-        $university_Name = $_POST['Univercity_name'];
+        $univercity_Name = $_POST['Univercity_name'];
         $query = "SELECT * FROM problem_table WHERE 
-        Project_Title = '$Title' AND 
-        Graduate_Degree = '$Degree' AND 
-        Project_Category = '$categories' AND 
-        College_State = '$State' AND 
-        Year_making = '$making' AND 
-        College_Name = '$Collage_name' AND 
-        Univercity_Name = '$university_Name'";
-    
-     //   ID='$id',Graduate_Degree=' $Degree ',Project_Category ='$categories',College_State ='  $State',Year_making =' $making',College_Name=' $Collage_name',University_Name=' $university_Name'";
-        $query_run = mysqli_query($connection , $query);
-       
-                // echo $row['Graduate_Degree'];
-    
+        Project_Title = '$Title' OR
+        Graduate_Degree = '$Degree' OR 
+        Project_Category = '$categories' OR 
+        College_State = '$State' OR 
+        Year_making = '$making' OR 
+        College_Name = '$Collage_name' OR 
+        Univercity_Name = '$univercity_Name'";
+
+        //   ID='$id',Graduate_Degree=' $Degree ',Project_Category ='$categories',College_State ='  $State',Year_making =' $making',College_Name=' $Collage_name',University_Name=' $university_Name'";
+        $query_run = mysqli_query($connection, $query);
+
+        // echo $row['Graduate_Degree'];
+
     ?>
-    <table class="Tab">
-        <tbody>
-            <tr>
-                <th>Graduate_Degree</th>
-                <th>Univercity_Name</th>
-                <th>Branch</th>
-                <th>Project_Category</th>
-                <th>Year_making </th>
-                <th>Project_Title</th>
-                <th>Project_Type</th>
-                <th>Refrence_Project</th>s
-
-            </tr>
-        </tbody>
-
-        <?php
-         if( mysqli_num_rows($query_run) >  0)
-         {
-         while($row = mysqli_fetch_array($query_run))
-         {
+        <table class="Tab">
+            <tbody>
+                <tr>
+                    <th>Graduate_Degree</th>
+                    <th>Univercity_Name</th>
+                    <th>Branch</th>
+                    <th>Project_Category</th>
+                    <th>Year_making </th>
+                    <th>Project_Title</th>
+                    <th>Project_Type</th>
+                    <th>Refrence_Project</th>
+                </tr>
+            </tbody>
+            <?php
+            if (mysqli_num_rows($query_run) >  0) {
+                while ($row = mysqli_fetch_array($query_run)) {
             ?>
-        <tr>
-            <td><?php $row['Graduate_Degree'];?></td>
-            <td><?php $row['University_Name']; ?></td>
-            <td><?php $row['Branch']; ?></td>
-            <td><?php $row['Project_Category']; ?></td>
-            <td><?php $row['Year_making']; ?></td>
-            <td><?php $row['Project_Title']; ?></td>
-            <td><?php $row['Project_Type']; ?></td>
-            <td><?php $row['Refrence_Project']; ?></td>
-        </tr>
-        <?php
-             }
-
-            }
-            else{
-               ?>
-        <tr>
-            <td colspan="6">No Recode data not Found</td>
-        </tr>
-        <?php
+                    <tr>
+                        <td><?php echo $row['Graduate_Degree']; ?></td>
+                        <td><?php echo $row['Univercity_Name']; ?></td>
+                        <td><?php echo $row['Branch']; ?></td>
+                        <td><?php echo $row['Project_Category']; ?></td>
+                        <td><?php echo $row['Year_making']; ?></td>
+                        <td><?php echo $row['Project_Title']; ?></td>
+                        <td><?php echo $row['Project_Type']; ?></td>
+                        <td><?php echo $row['Refrence_Project']; ?></td>
+                    </tr>
+                <?php
+                }
+            } else {
+                ?>
+                <tr>
+                    <td colspan="6">No Recode data not Found</td>
+                </tr>
+            <?php
             }
             ?>
 
-        <!-- Add more rows as needed -->
-    </table>
+            <!-- Add more rows as needed -->
+        </table>
     <?php
-       }
+    }
     ?>
 
 

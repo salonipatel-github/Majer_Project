@@ -368,6 +368,9 @@ th, td:hover{
 .tab2{
     border:1px solid black;
 }
+.co{
+    color:black;
+}
 
 /* Responsive layout - make the table stack on small screens */
 @media (max-width: 600px) {
