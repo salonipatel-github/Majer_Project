@@ -17,9 +17,9 @@ session_start();
     <nav>
         <div class="container main-nav flex">
             <a href="#" class="company-logo">
-                <img src="assett.png" alt="company lo            <div class="nav-links" id="nav-links">
+                <img src="assett.png" alt="company logo"> <div class="nav-links" id="nav-links">
                 <ul class="flex">
-                    <li><a href="Home.html" class="hover-link1">Home</a></li>
+                    <li><a href="index.html" class="hover-link1">Home</a></li>
                     <li><a href="#" class="hover-link1">About</a></li>
                     <li><a href="#" class="hover-link1">Team</a></li>
                     <li><a href="#" class="hover-link1">Project</a></li>

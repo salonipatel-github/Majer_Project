@@ -1,6 +1,6 @@
 <?php 
 session_start();
-header('location:index.html');
+header('location:Login.html');
 
 $con= mysqli_connect('localhost','root');
 if($con){

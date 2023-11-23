@@ -27,6 +27,7 @@ if($num==1){
 }
 else{
     header('location:index.html');
+    header('location:Login.html');
    
 }
 ?>
