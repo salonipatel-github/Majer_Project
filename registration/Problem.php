@@ -17,9 +17,7 @@ session_start();
     <nav>
         <div class="container main-nav flex">
             <a href="#" class="company-logo">
-                <img src="assett.png" alt="company logo">
-            </a>
-            <div class="nav-links" id="nav-links">
+                <img src="assett.png" alt="company lo            <div class="nav-links" id="nav-links">
                 <ul class="flex">
                     <li><a href="Home.html" class="hover-link1">Home</a></li>
                     <li><a href="#" class="hover-link1">About</a></li>
@@ -51,7 +49,7 @@ session_start();
         </div>
         <div class="cont">
             <label for="value"> Degree<label>
-                    <select class="sel" name="degree" id="degree1" class="form-control">
+                    <select class="sel" name="degree"  id="degree1" class="form-control">
                         <option value="degree">Select Here</option>
                         <option value="degree">B.Tech</option>
                         <option value="degree">M.Tech</option>
@@ -62,7 +60,7 @@ session_start();
                     </select>
 
                     <label for="value"> Categories </label>
-                    <select class="sel" name="Categories" id="degree1" class="form-control">
+                    <select class="sel" name="Categories"   id="degree1" class="form-control">
                         <option value="Categories">Select Here</option>
                         <option value="Categories">Softwere</option>
                         <option value="Categories">Hardwere</option>
@@ -72,60 +70,60 @@ session_start();
 
         <div class="cont">
             <label for="value"> State</label>
-            <select class="sel" name="state" id="state" class="form-control">
-                <option value="state">Select Here</option>
-                <option value="state">Andhra Pradesh</option>
-                <option value="state">Andaman and Nicobar Islands</option>
-                <option value="state">Arunachal Pradesh</option>
-                <option value="state">Assam</option>
-                <option value="state">Bihar</option>
-                <option value="state">Chandigarh</option>
-                <option value="state">Chhattisgarh</option>
-                <option value="state">Dadar and Nagar Haveli</option>
-                <option value="state">Daman and Diu</option>
-                <option value="state">Delhi</option>
-                <option value="state">Lakshadweep</option>
-                <option value="state">Puducherry</option>
-                <option value="state">Goa</option>
-                <option value="state">Gujarat</option>
-                <option value="state">Haryana</option>
-                <option value="state">Himachal Pradesh</option>
-                <option value="state">Jammu and Kashmir</option>
-                <option value="state">Jharkhand</option>
-                <option value="state">Karnataka</option>
-                <option value="state">Kerala</option>
-                <option value="state">Madhya Pradesh</option>
-                <option value="state">Maharashtra</option>
-                <option value="state">Manipur</option>
-                <option value="state">Meghalaya</option>
-                <option value="state">Mizoram</option>
-                <option value="state">Nagaland</option>
-                <option value="state">Odisha</option>
-                <option value="state">Punjab</option>
-                <option value="state">Rajasthan</option>
-                <option value="state">Sikkim</option>
-                <option value="state">Tamil Nadu</option>
-                <option value="state">Telangana</option>
-                <option value="state">Tripura</option>
-                <option value="state">Uttar Pradesh</option>
-                <option value="state">Uttarakhand</option>
-                <option value="state">West Bengal</option>
+            <select class="sel" name="state"  id="state" class="form-control">
+                <option  value="state">Select Here</option>
+                <option  value="state">Andhra Pradesh</option>
+                <option  value="state">Andaman and Nicobar Islands</option>
+                <option  value="state">Arunachal Pradesh</option>
+                <option  value="state">Assam</option>
+                <option  value="state">Bihar</option>
+                <option  value="state">Chandigarh</option>
+                <option  value="state">Chhattisgarh</option>
+                <option  value="state">Dadar and Nagar Haveli</option>
+                <option  value="state">Daman and Diu</option>
+                <option  value="state">Delhi</option>
+                <option  value="state">Lakshadweep</option>
+                <option  value="state">Puducherry</option>
+                <option  value="state">Goa</option>
+                <option  value="state">Gujarat</option>
+                <option  value="state">Haryana</option>
+                <option  value="state">Himachal Pradesh</option>
+                <option  value="state">Jammu and Kashmir</option>
+                <option  value="state">Jharkhand</option>
+                <option  value="state">Karnataka</option>
+                <option  value="state">Kerala</option>
+                <option  value="state">Madhya Pradesh</option>
+                <option  value="state">Maharashtra</option>
+                <option  value="state">Manipur</option>
+                <option  value="state">Meghalaya</option>
+                <option  value="state">Mizoram</option>
+                <option  value="state">Nagaland</option>
+                <option  value="state">Odisha</option>
+                <option  value="state">Punjab</option>
+                <option  value="state">Rajasthan</option>
+                <option  value="state">Sikkim</option>
+                <option  value="state">Tamil Nadu</option>
+                <option  value="state">Telangana</option>
+                <option  value="state">Tripura</option>
+                <option  value="state">Uttar Pradesh</option>
+                <option  value="state">Uttarakhand</option>
+                <option  value="state">West Bengal</option>
             </select>
 
             <label for="value"> Year Making<label>
-                    <select class="sel" name=" Making" id="degree1" class="form-control">
-                        <option value=" Making">Select Here</option>
-                        <option value=" Making">1 Year</option>
-                        <option value=" Making">2 Year</option>
-                        <option value=" Making">3 Year</option>
-                        <option value=" Making">4 Year</option>
+                    <select class="sel" name=" Making"   id="degree1" class="form-control">
+                        <option  value=" Making">Select Here</option>
+                        <option  value=" Making">1 Year</option>
+                        <option  value=" Making">2 Year</option>
+                        <option  value=" Making">3 Year</option>
+                        <option  value=" Making">4 Year</option>
                     </select>
         </div>
         <div class="cont">
-            <label for="value"> Collage Name </label>
+            <label for="value">Collage Name</label>
             <input type="text" class="sel" placeholder=" Collage Name" name="collage_name" id="state" class="form-control">
 
-            <label for="value"> University Name</label>
+            <label for="value">University Name</label>
             <input type="text" class="sel" placeholder=" University Name" name="Univercity_name" id="state" class="form-control">
         </div>
     </form>
