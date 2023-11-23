@@ -58,6 +58,7 @@ session_start();
                         <option value="degree">B.S.C</option>
                         <option value="degree">M.S.C</option>
                         <option value="degree">M.B.A</option>
+                        <option value="degree">B.B.A</option>
                     </select>
 
                     <label for="value"> Categories </label>

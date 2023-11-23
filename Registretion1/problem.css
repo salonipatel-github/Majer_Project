@@ -318,31 +318,6 @@ footer {
 }
 
 
-/* table */
-
-.table{
-    /* background-color:#e7d7f8; */
-    height:900px;
-    border:1px solid black;
-    
-}
-.table1{
-    margin-top: 20px;
-    /* background: linear-gradient(135deg, #f8f8f8,#eae7fb); */
-}
-.hed2{
-    font-size:25px;
-    font-weight: bold;
-}
-.t1{
-    height:120px;
-    width:93rem;
-    border:1px solid black;
-    margin-top:20px;
-    padding:20px 20px;
-
-  
-}
 
 
 /* /////// */

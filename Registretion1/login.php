@@ -18,7 +18,6 @@ $name = ($_GET['name']);
 $pass =  ($_GET['password']); 
 
 
-
 $q = "select * from  users where Username ='$name'  && 	Password='$pass' ";
 $result = mysqli_query($con,$q);
 $num = mysqli_num_rows($result);
